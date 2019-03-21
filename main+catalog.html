@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Main + Catalog</title>
+    <link rel="stylesheet" href="main+catalog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="row-h">
+        <div class="container">
+
+            <!--ЛЕВАЯ ЧАСТЬ ШАПКИ, ЛОГОТИП И НОМЕР-->
+            <div class="header-logo">
+                <div class="number">
+                    <a href="main+catalog.html">
+                        <p>8-800-123-45-45</p>
+                        <a href="#winRequest" class="phone">заказать звонок</a>
+                    </a>
+                </div>
+                <a href="#" class="logo-image">
+                    <img src="font/logotype.png" alt="zoo">
+                </a>
+            </div>
+
+            <!--Модальное окно ЗАКАЗАТЬ ЗВОНОК-->
+            <!--Слой затемнения пространства-->
+            <div id="winRequest" class="modal">
+                <!--Содержимое формы-->
+                <div class="callForm">
+                    <!--Кнопка закрыть-->
+                    <div class="closeformModal">
+                        <a href="#close1"><img src="font/close.png" alt="close"/></a>
+                    </div>
+                    <div class="help">
+                        <p>Оставьте заявку на сотрудничество!</p>
+                        <p>Наш специалист свяжется с Вами в ближайшее время.</p>
+                    </div>
+                    <!--ФОРМА ОТПРАВКИ-->
+                    <form class="formBackCall" action="#" method="POST">
+                        <div>
+                            <p class="name">Имя</p>
+                            <label>
+                                <input type="text" class="Entername">
+                            </label>
+                        </div>
+                        <div>
+                            <p class="modal_phone">Телефон</p>
+                            <label>
+                                <input type="text" class="Entername" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </label>
+                        </div>
+                        <div class="modalAlignDiv">
+                            <label>
+                                <input class="check" type="checkbox">
+                            </label>
+                            <p>Ставя отметку, я подтверждаю согласие на обработку моих персональных данных</p>
+                        </div>
+                        <input class="sub" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+            <!-- МЕНЮ ШАПКИ -->
+            <div class="middle-menu">
+                <div class="top-menu">
+                    <div class="menu">
+                        <a href="#">Оплата и доставка</a>
+                        <a href="#">Как заказать?</a>
+                        <a href="#">Дисконтная программа</a>
+                        <a href="#">Студия груминга</a>
+                        <a href="#">Советы ветеринаров</a>
+                        <a href="#">Бренды</a>
+                    </div>
+                    <a href="#CallVeterinar" class="feedback">Задать вопрос ветеринару</a>
+                </div>
+
+                <!--МОДАЛЬНОЕ ОКНО "ЗАДАТЬ ВОПРОС ВЕТЕРИНАРУ"-->
+                <div id="CallVeterinar" class="modal">
+                    <!--Содержимое формы-->
+                    <div class="callFormVet">
+                        <!--Кнопка закрыть-->
+                        <div class="closeformModalVet">
+                            <a href="#close1"><img src="font/close.png" alt="close"/></a>
+                        </div>
+                        <div class="help2">
+                            <p>Задайте вопрос ветеринару</p>
+                            <p>В течении некоторого времени, Вам ответят.</p>
+                        </div>
+                        <!--ФОРМА ОТПРАВКИ-->
+                        <form class="formBackVet" action="" method="POST">
+                            <div>
+                                <p class="name2">Имя</p>
+                                <label>
+                                    <input type="text" class="Entername2">
+                                </label>
+                            </div>
+                            <div>
+                                <p class="modal_phone2">Email</p>
+                                <label>
+                                    <input type="email" class="Entername2">
+                                </label>
+                            </div>
+                            <div>
+                                <p class="textmodal2">Напишите текст вопроса</p>
+                                <label>
+                                    <textarea></textarea>
+                                </label>
+                            </div>
+                            <div class="modalAlignDiv2">
+                                <label>
+                                    <input class="check2" type="checkbox">
+                                </label>
+                                <p>Ставя отметку, я подтверждаю согласие на обработку моих персональных данных</p>
+                            </div>
+                            <input class="sub2" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+                <!-- Нижняя часть шапки меню -->
+                <div class="bottom-header">
+                    <div class="left-bottom">
+                        <div class="catalog-menu">
+                                <span>
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    Каталог
+                                </span>
+
+                            <div class="Catalog">
+                                <ul>
+                                    <li><a href="#">Вет препараты</a></li>
+                                    <li><a href="#">Воротники защитные, попоны послеоперационные</a></li>
+                                    <li><a href="#">Животные</a></li>
+                                    <li><a href="#">Литература</a></li>
+                                    <li><a href="#">Косметика, среда по уходу</a></li>
+                                    <li><a href="#">Наборы</a></li>
+                                    <li><a href="#">Пеленки, подстилки подгузники</a></li>
+                                    <li><a href="#">Переноски</a></li>
+                                    <li><a href="#">Лежанки</a></li>
+                                    <li><a href="#">Домики</a></li>
+                                    <li><a href="#">Посуда</a></li>
+                                    <li><a href="#">Средства, блокирующие запахи</a></li>
+                                    <li><a href="#">Щетки, расчетки, фурминаторы и др. инструметы</a></li>
+                                    <li><a href="#">Товары для грызунов</a></li>
+                                    <li><a href="#" class="submenu">Товары для кошек</a></li>
+                                    <li><a href="#">Товары для птиц</a></li>
+                                    <li><a href="#">Товары для рептилей</a></li>
+                                    <li><a href="#">Товары для рыб</a></li>
+                                    <li><a href="#">Товары для собак</a></li>
+                                    <li><a href="#">Туалеты, лотки</a></li>
+                                    <ul class="submenu1">
+                                        <li><a href="#">Товары для кошек</a></li>
+                                        <li><a href="#">Корма сухие</a></li>
+                                        <li><a href="#">Корма влажные</a></li>
+                                        <li><a href="#">Лакомства для кошек</a></li>
+                                        <li><a href="#">Миски для кошек</a></li>
+                                        <li><a href="#">Игрушки для кошек</a></li>
+                                        <li><a href="#">Накопители для туалета</a></li>
+                                        <li><a href="#">Уход за шерстью</a></li>
+                                        <li><a href="#">Туалеты для кошек</a></li>
+                                        <li><a href="#">Совки для туалетов</a></li>
+                                        <li><a href="#">Поводки</a></li>
+                                        <li><a href="#">Поводок со шлейкой комплект</a></li>
+                                        <li><a href="#">Поводки с ошейников</a></li>
+                                        <li><a href="#">Шлейки</a>
+                                        <li><a href="#">Уход за шерстью</a></li>
+                                        <li><a href="#">Когтерезы</a></li>
+                                        <li><a href="#">Когти накладные для кошек</a></li>
+                                        <li><a href="#">Переноски</a></li>
+                                        <li><a href="#">Домики, лежанки, когтеточки для кошек</a></li>
+                                        <li><a href="#">Сухое молоко и бутылочки</a></li>
+                                        <li><a href="#">Сумки-переноски для кошек</a></li>
+                                    <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-menu">
+                            <a href="#">Новинки</a>
+                            <a href="#">Акции</a>
+                            <a href="#">Скидки</a>
+                            <a href="#">Распродажа</a>
+                            <a href="#">
+                                <i class="fa fa-heart-o" aria-hidden="true">
+                                    <span class="spanTest">23</span>
+                                </i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa fa-comment-o" aria-hidden="true">
+                                    <span class="spanTest">0</span>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right-bottom">
+                        <a href="#" class="loop">
+                            <img src="font/loop.png" alt="search-Zoo">
+                        </a>
+
+                        <a href="#" class="fixflex">
+                            <img src="font/Shape.png" alt="shape-Zoo">
+                            <span class="food-basket">54</span>
+                            <p>Корзина</p>
+                        </a>
+
+                        <a href="#" class="area">
+                            <p><img src="font/My-account.png" alt="account-Zoo">Личный кабинет</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <!--НАВИГАЦИОННОЕ МЕНЮ хлебные крошки-->
+    <div class="row-s">
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Товары для кошек</a>
+    </div>
+</nav>
+</body>
+</html>

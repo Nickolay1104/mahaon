@@ -1,0 +1,621 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    box-sizing: border-box;
+}
+/* Цветовой фон */
+header {
+    background: rgb(48, 23, 69) linear-gradient(90deg, rgba(48, 23, 69, 1) 0%, rgba(108, 71, 148, 1) 55%, rgba(81, 51, 113, 1) 79%, rgba(40, 22, 62, 1) 100%);
+    width: 100%;
+    height: 200px;
+}
+
+.centr {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 199px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.row-h {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ЛОГОТИП */
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.number {
+    margin-top: 29px;
+}
+
+.number a:nth-child(1) {
+    text-decoration: none;
+}
+
+.logo-image {
+    margin-top: 23px;
+    line-height: 1px;
+}
+
+.number p {
+    color: #fff;
+    font-size: 24px;
+    padding: 2px;
+    line-height: 20px;
+
+}
+
+.number a {
+    color: #fff;
+    font-size: 14px;
+
+}
+
+/* МЕНЮ ПО СЕРЕДИНЕ */
+.middle-menu {
+    display: flex;
+    max-width: 1330px;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 87px;
+}
+
+.top-menu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.top-menu a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.menu a {
+    margin-right: 5%;
+    white-space: nowrap;
+}
+
+/* КНОПКА ЗАДАТЬ ВОПРОС ВЕТЕРИНАРУ*/
+.feedback {
+    background-color: #ff548a;
+    border: 1px solid #ff548a;
+    border-radius: 25px;
+    padding: 4px 18px;
+}
+
+.feedback:hover {
+    background: #00b0c7;
+    border: 1px solid #00b0c7;
+}
+
+/* НИЖНЯЯ ЧАСТЬ МЕНЮ ШАПКИ */
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 64px;
+}
+
+.bottom-header a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* КАТАЛОГ */
+.catalog-menu {
+    position: relative;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ff548a;
+    border: 1px #ff548a dashed;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    text-align: center;
+    width: 144px;
+    cursor: pointer;
+}
+
+.catalog-menu:hover {
+    background: #ff548a;
+    color: #ffeaf1;
+}
+
+.list {
+    position: relative;
+    display: none ;
+}
+
+/* Появление списка каталога */
+.catalog-menu:hover .Catalog{
+    display: flex;
+}
+
+.Catalog {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    box-shadow: 1px 1px 10px 0 #000;
+    width: 400px;
+    padding: 5px 30px 5px 50px;
+    background-image: url("font/testNew Folder/pawOverlay.png");
+    background-color: #ededed;
+    top: 38px;
+    left: 20px;
+}
+
+.Catalog a {
+    color:  #000;
+}
+
+.Catalog ul {
+    line-height: 24px;
+    text-align: left;
+}
+
+.Catalog a:active {
+    color: #00b0c7;
+}
+
+li {
+    padding: 6px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.submenu:hover .submenu1 {
+    display: flex;
+}
+
+.submenu1 {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    box-shadow: 1px 1px 10px 0 #000;
+    width: 400px;
+    left: -300px;
+    padding: 5px 30px 5px 50px;
+    background-image: url("font/testNew Folder/pawOverlay.png");
+    background-color: #ededed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////*/
+
+/* Среднее нижнее меню */
+.list-menu {
+    display: inline-block;
+}
+
+.left-bottom {
+    display: inline-block;
+    width: 100%;
+}
+
+.left-bottom .list-menu a {
+    padding: 10px;
+}
+
+
+
+.spanTest {
+    display: inline-block;
+    background: #00b0c7;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+    width: 20px;
+    vertical-align: super;
+    right: 28%;
+    bottom: 5px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Правое нижнее меню */
+.right-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 642px;
+    align-items: center;
+}
+
+.right-bottom a {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.food-basket {
+    display: inline-block;
+    background: #00b0c7;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 19px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: super;
+    right: 6%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.right-bottom p {
+    display: flex;
+}
+
+.area p {
+    color: #00b0c7;
+}
+
+.area p:hover {
+    text-decoration: underline;
+}
+
+.my-acc p {
+    margin-left: 26px;
+    color: #00afc6;
+}
+
+a.fixflex {
+    display: flex;
+}
+
+.area p img {
+    margin: 0 22px 0 0;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+}
+
+.modal:target {
+    display: block;
+}
+
+/* ФОРМА */
+.callForm {
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
+    flex-direction: column;
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 601px;
+    width: 100%;
+    max-width: 460px;
+    padding: 43px 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* ЗАКРЫТИЕ ФОРМУ */
+.closeformModal {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    cursor: pointer;
+
+}
+.closeformModal:target + .modal {
+    display: none;
+}
+
+/* Шапка в форме заявки */
+.help {
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+.help p:first-child {
+    font-size: 20px;
+}
+
+.help p:last-child {
+    font-size: 13px;
+    width: 100%;
+    max-width: 260px;
+    display: inline-block;
+}
+
+
+/* Форма отправки */
+.formBackCall {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+    text-align: left;
+}
+
+.formBackCall label:first-child {
+    margin-bottom: 10px;
+}
+
+/* Название поля ввода */
+.name,
+.modal_phone {
+    padding: 12px 0;
+    color: #333333;
+    width: 265px;
+    font-size: 14px;
+}
+
+.modal_phone:after {
+    content: '*';
+    color: red;
+    vertical-align: top;
+}
+
+p.name {
+    margin: 0;
+}
+
+.modal_phone {
+    margin: 8px 0;
+}
+
+/* Поле ввода*/
+.Entername {
+    background-color: rgb(237, 237, 237);
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 3px;
+    width: 265px;
+    height: 50px;
+    padding: 16px 38px 16px 16px;
+    font-size: 20px;
+}
+
+/* Отметка обработка данных */
+.modalAlignDiv {
+    display: flex;
+    margin: 35px 0;
+    color: #999999;
+    line-height: 20px;
+    font-size: 14px;
+    width: 265px;
+}
+
+/* Чекбокс */
+.check {
+    color: #999999;
+    margin: 4px 15px 0 0;
+}
+
+/* Текст вопроса*/
+.textmodal {
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+}
+
+textarea {
+    resize: none;
+    width: 265px;
+}
+
+/* КНОПКА ОТПРАВКИ */
+.sub {
+    padding: 13px 75px;
+    width: 265px;
+    height: 50px;
+    background: #00afc6;
+    border-radius: 5px;
+    border: 1px solid #00afc6;
+    color: #ededed;
+    font-size: 16px;
+}
+
+
+/* МОДАЛЬНОЕ ОКНО "ЗАДАТЬ ВОПРОС ВЕТЕРИНАРУ" */
+/* ФОРМА */
+.callFormVet {
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
+    flex-direction: column;
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 810px;
+    width: 100%;
+    max-width: 460px;
+    padding: 43px 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.closeformModalVet {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    cursor: pointer;
+
+}
+.closeformModalVet:target + .modal {
+    display: none;
+}
+
+/* Шапка в форме заявки */
+.help2 {
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+.help2 p:first-child {
+    font-size: 20px;
+}
+
+.help2 p:last-child {
+    font-size: 13px;
+    width: 100%;
+    max-width: 260px;
+    display: inline-block;
+}
+
+
+/* Форма отправки */
+.formBackVet {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+    text-align: left;
+}
+
+.formBackVet label:first-child {
+    margin-bottom: 10px;
+}
+
+/* Название поля ввода */
+.name2,
+.modal_phone2 {
+    padding: 12px 0;
+    color: #333333;
+    width: 265px;
+    font-size: 14px;
+}
+
+.modal_phone2:after {
+    content: '*';
+    color: red;
+    vertical-align: top;
+}
+
+p.name2 {
+    margin: 0;
+}
+
+.modal_phone2 {
+    margin: 8px 0;
+}
+
+/* Поле ввода*/
+.Entername2 {
+    background-color: rgb(237, 237, 237);
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 3px;
+    width: 265px;
+    height: 50px;
+    padding: 16px 38px 16px 16px;
+    font-size: 20px;
+}
+
+/* Отметка обработка данных */
+.modalAlignDiv2 {
+    display: flex;
+    margin: 35px 0;
+    color: #999999;
+    line-height: 20px;
+    font-size: 14px;
+    width: 265px;
+}
+
+/* Чекбокс */
+.check2 {
+    color: #999999;
+    margin: 4px 15px 0 0;
+}
+
+/* Текст вопроса*/
+.textmodal2{
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+}
+
+textarea {
+    resize: none;
+    width: 265px;
+    height: 200px;
+    padding: 2px 5px;
+}
+
+/* КНОПКА ОТПРАВКИ */
+.sub2 {
+    padding: 13px 75px;
+    width: 265px;
+    height: 50px;
+    background: #00afc6;
+    border-radius: 5px;
+    border: 1px solid #00afc6;
+    color: #ededed;
+    font-size: 16px;
+}
+
+/* Навигация  */
+nav {
+    background-color: #ededed;
+}
+
+.row-s {
+    display: flex;
+    padding: 22px 0;
+}
+
+.row-s a {
+    text-decoration: none;
+    padding-left: 15px;
+}
